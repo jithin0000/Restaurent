@@ -1,5 +1,6 @@
 package com.restuarent.Restaurent.models;
 
+import com.mongodb.client.model.geojson.MultiPolygon;
 import lombok.Data;
 import org.springframework.data.mongodb.core.geo.GeoJsonMultiPolygon;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -14,8 +15,9 @@ public class Country extends BaseModel {
     private String name;
     @NotNull(message="code is required field ")
     private String code;
-    @NotNull(message = "geometry is required field ")
+    @NotNull(message = "geometry is required field")
     private GeoJsonMultiPolygon geometry;
+
 
 
 
