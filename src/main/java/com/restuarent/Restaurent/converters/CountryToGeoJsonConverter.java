@@ -25,12 +25,11 @@ public class CountryToGeoJsonConverter implements Converter<Country, GeoJsonDto>
     public GeoJsonDto convert(Country country) {
         GeoJsonDto dto = new GeoJsonDto();
 
-        HashMap<String, Object> setP = new HashMap<>();
-        setP.put("first", "test");
 
         dto.setType("FeatureCollection");
         HashMap<String, String> properties = new HashMap<>();
-        properties.put("kind", "state");
+        properties.put("name", country.getName());
+        properties.put("code", country.getCode());
         dto.setProperties(properties);
 
 
