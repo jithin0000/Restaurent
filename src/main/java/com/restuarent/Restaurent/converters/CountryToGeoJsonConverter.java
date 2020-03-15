@@ -4,15 +4,9 @@ import com.restuarent.Restaurent.dto.CGeometry;
 import com.restuarent.Restaurent.dto.CustomFeatures;
 import com.restuarent.Restaurent.dto.GeoJsonDto;
 import com.restuarent.Restaurent.models.Country;
-import org.geojson.Feature;
-import org.geojson.FeatureCollection;
-import org.geojson.GeoJsonObject;
-import org.geojson.Geometry;
 import org.springframework.core.convert.converter.Converter;
-import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
 import org.springframework.stereotype.Component;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
